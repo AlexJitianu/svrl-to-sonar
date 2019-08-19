@@ -57,7 +57,7 @@ public class Convert {
       URI checkedFileUri = new File(checkedFilePath).toURI();
       checkedFile = projectUri.relativize(checkedFileUri).getPath();
     } else {
-      checkedFile = CHECKED_DOCUMENT_PATH;
+      checkedFile = checkedFilePath;
     }
     document = XmlFileUtil.createXmlFile(checkedFilePath).getDocument();
   }
